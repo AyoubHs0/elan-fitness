@@ -16,7 +16,10 @@ body {
   background-color: #F7F8FA;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Poppins', Arial, sans-serif;
   color: #0F1B2D;
 }
@@ -171,23 +174,23 @@ button:focus-visible {
   justify-content: space-between;
 }
 
-.logo {
+/* .logo {
   display: flex;
   align-items: center;
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #0F1B2D;
-}
+} */
 
-.logo::after {
+/* .logo::after {
   content: "";
   width: 10px;
   height: 10px;
   margin-left: 8px;
   background-color: #FF6B2C;
   border-radius: 50%;
-}
+} */
 
 .menu {
   display: flex;
@@ -272,7 +275,7 @@ button:focus-visible {
   color: #0F1B2D;
 }
 
-.chiffre + .chiffre {
+.chiffre+.chiffre {
   border-left: 1px solid #E5E7EB;
 }
 
@@ -361,7 +364,7 @@ button:focus-visible {
   overflow: hidden;
 }
 
-.carte-programme > img {
+.carte-programme>img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -420,7 +423,7 @@ button:focus-visible {
   color: #0F1B2D;
 }
 
-.programme-corps h3 + p {
+.programme-corps h3+p {
   margin-bottom: 16px;
 }
 
@@ -545,3 +548,97 @@ button:focus-visible {
   font-size: 13px;
   color: #94A3B8;
 }
+
+.bag {
+    background-color: #e3e4e7;
+    padding: 10px 20px;
+}
+
+.cen {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    width: 700px;
+}
+
+.contact label {
+    width: 80px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    height: 40px;
+    width: 215px;
+    border: 2px solid #f75110;
+    border-radius: 10px;
+}
+
+.contact button {
+    background-color: #FF6B2C;
+    border: 1px solid #FF6B2C;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact h1 {
+    text-align: center;
+    color: #f75110;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .ligne {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact .ligne-message {
+    align-items: flex-start;
+}
+
+.contact .ligne input[type="tel"],
+.contact .ligne input[type="email"] {
+    flex: 1;
+}
+
+.contact .ligne-message textarea {
+    flex: 1;
+    height: 100px;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.logo img {
+    height: 80px;
+}
+
